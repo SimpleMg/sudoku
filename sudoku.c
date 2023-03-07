@@ -25,7 +25,7 @@ int main(int argc, char **argv)
     mg_putchar('\n');
     /*CREATION DE LA GRILLE*/
     //Allocation de la mémoire
-    int **board = (int**)malloc(nbre_ligne * sizeof(int*));
+    int **board = (int**)malloc(NBRE_LIGNE * sizeof(int*));
     if(board == NULL)
     {
         mg_putstr("Mauvaise allocation mémoire\n");
@@ -33,9 +33,9 @@ int main(int argc, char **argv)
     }
     int i, j, i_buffer;
     i = 0;
-    while(i < nbre_ligne)
+    while(i < NBRE_LIGNE)
     {
-        board[i] = (int*)malloc(nbre_ligne * sizeof(int));
+        board[i] = (int*)malloc(NBRE_LIGNE * sizeof(int));
         if(board[i] == NULL)
         {   
             mg_putstr("Mauvaise allocation mémoire\n");
@@ -47,9 +47,9 @@ int main(int argc, char **argv)
     i = 0;
     j = 0;
     i_buffer = 0;
-    while(i < nbre_ligne)
+    while(i < NBRE_LIGNE)
     {
-        while(j < nbre_colonne)
+        while(j < NBRE_COLONNE)
         {
             if(buffer[i_buffer] >= '0' && buffer[i_buffer] <= '9')
             {
