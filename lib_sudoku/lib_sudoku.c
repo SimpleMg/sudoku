@@ -3,6 +3,9 @@
 #include "../Biblio_C/biblio.h"
 #include "lib_sudoku.h"
 
+
+
+
 void afficher_grille(int **board)
 {
     int i = 0;
@@ -27,4 +30,24 @@ void afficher_grille(int **board)
         i++;
         j = 0;
     }
+}
+
+BOOL horizontal_check(int **board)
+{
+
+}
+
+BOOL vertical_check(int **board)
+{
+
+}
+
+BOOL carre_check(int **board)
+{
+
+}
+
+int **resolv_sudoku(int **board)
+{
+    return board;
 }
