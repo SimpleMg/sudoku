@@ -9,6 +9,7 @@
 
 int main(int argc, char **argv)
 {
+    /*VERIFIE SI L'UTILISATEUR PASSE BIEN LE FICHIER TEXT EN ARGUMENT*/
     if(argc != 3)
     {
         mg_putstr("Merci de renseigner le fichier txt exemple: ./a.out 3 exemple.txt\n");
@@ -58,6 +59,9 @@ int main(int argc, char **argv)
         j = 0;
     }
     //affiche de la grille
+    afficher_grille(board);
+    /*RESOLUTION DE LA GRILLE*/
+    board = resolv_sudoku(board);
     afficher_grille(board);
     return 1;
 }
