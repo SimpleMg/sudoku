@@ -49,7 +49,7 @@ int main(int argc, char **argv)
     i_buffer = 0;
     while(i < NBRE_LIGNE)
     {
-        while(j < NBRE_COLONNE)
+        while(j <= NBRE_COLONNE)
         {
             if(buffer[i_buffer] >= '0' && buffer[i_buffer] <= '9')
             {
