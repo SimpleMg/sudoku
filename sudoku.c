@@ -6,9 +6,6 @@
 #include "Biblio_C/biblio.h"
 #include "lib_sudoku/lib_sudoku.h"
 
-#define nbre_ligne 9
-#define nbre_colonne 9
-
 
 int main(int argc, char **argv)
 {
@@ -22,7 +19,6 @@ int main(int argc, char **argv)
     int fd = open(argv[2], O_RDONLY);
     int size = read(fd, buffer, 1024);
     close(fd);
-    mg_putchar('\n');
     /*CREATION DE LA GRILLE*/
     //Allocation de la mémoire
     int **board = (int**)malloc(NBRE_LIGNE * sizeof(int*));
