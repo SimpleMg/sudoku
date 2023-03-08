@@ -60,18 +60,7 @@ int main(int argc, char **argv)
 
     // affiche de la grille
     afficher_grille(board);
-    /*
-    RESOLUTION DE LA GRILLE
-    board = resolv_sudoku(board);
-    afficher_grille(board);
-    */
     return 1;
 }
 
-/*
-resoudre le probleme memoire
-suite:
-faire le debut de l'algo de resolution
-chaque ligne chaque colonne et chaque carre de 3 les chiffres qui manquent.
 
-*/
