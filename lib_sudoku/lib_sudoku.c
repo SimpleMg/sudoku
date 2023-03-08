@@ -6,19 +6,20 @@
 
 
 
+
 void afficher_grille(int **board)
 {
     int i = 0;
     int j = 0;
     while(i < NBRE_LIGNE)
     {
-        if(i % 3 == 0 && i != NBRE_LIGNE && i != 0)
+        if(i % 3 == 0)
         {
             mg_putstr("-------------------------\n");
         }
         while(j < NBRE_COLONNE)
         {
-            if(j  % 3 == 0) //cette ligne c pour traiter le dernier cas de l'affichage 
+            if(j % 3 == 0) //cette ligne c pour traiter le dernier cas de l'affichage 
             {
                 mg_putstr("| ");
             }
@@ -30,7 +31,11 @@ void afficher_grille(int **board)
         i++;
         j = 0;
     }
+    mg_putstr("-------------------------\n");
 }
+
+
+
 
 
 
