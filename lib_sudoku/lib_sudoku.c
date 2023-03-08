@@ -6,7 +6,6 @@
 
 
 
-
 void afficher_grille(int **board)
 {
     int i = 0;
@@ -35,30 +34,73 @@ void afficher_grille(int **board)
 }
 
 
-
-
-
-
-
-
-
-/*
-BOOL horizontal_check(int **board)
+BOOL verif_ligne(int **board, int ligne, int valeur)
 {
+    int i;
+    i = 0;
+    while(i < NBRE_COLONNE)
+    {
+        if(board[ligne][i] == valeur)
+        {
+            return FALSE;
+        }
+        i++;
+    }
+    return TRUE;
+
 
 }
 
-BOOL vertical_check(int **board)
-{
 
+BOOL verif_colonne(int **board, int colonne, int valeur)
+{
+    int i;
+    i = 0;
+    while(i < NBRE_COLONNE)
+    {
+        if(board[i][colonne] == valeur)
+        {
+            return FALSE;
+        }
+        i++;
+    }
+    return TRUE;
 }
 
-BOOL carre_check(int **board)
+BOOL verif_3x3(int **board, int ligne, int colonne, int valeur)
 {
-
+    int i = 0, j = 0;
+    int k = ligne - (ligne % 3);
+    int l = colonne - (colonne % 3);
+    while(i < k + 3)
+    {
+        while(j < l + 3)
+        {
+            if(board[i][j] == valeur)
+            {
+                return FALSE;
+            }
+            j++;
+        }
+        i++;
+    }
+    return TRUE;
 }
 
-int **resolv_sudoku(int **board)
+
+BOOL valide(int **board,int ligne, int colonne, int valeur)
 {
-    return board;
-}*/
+    if(!verif_ligne(board, ligne, valeur))
+    {
+        return FALSE;
+    }
+    if(!verif_colonne(board, colonne, valeur))
+    {
+        return FALSE;
+    }
+    if(!verif_3x3(board, ligne, colonne, valeur))
+    {
+        return FALSE;
+    }
+    return TRUE;
+}
