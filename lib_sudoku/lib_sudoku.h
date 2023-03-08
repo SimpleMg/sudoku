@@ -8,10 +8,10 @@
 typedef int BOOL;
 
 void afficher_grille(int **board);
-BOOL horizontal_check(int **board);
+/*BOOL horizontal_check(int **board);
 BOOL vertical_check(int **board);
 BOOL carre_check(int **board);
-int** resolv_sudoku(int **board);
+int** resolv_sudoku(int **board);*/
 
 
 #endif
