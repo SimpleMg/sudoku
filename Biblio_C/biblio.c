@@ -3,7 +3,17 @@
 #include <unistd.h>
 #include "biblio.h"
 
-
+void mg_fibonnacci(int n)
+{
+    int i, t1 = 0, t2 = 1, nextTerm;
+    i = 0;
+    while (i <= n) {
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+        i++;
+    }
+}
 
 List* mg_initialisation_liste()
 {
