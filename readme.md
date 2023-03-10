@@ -6,11 +6,9 @@ Resolveur de Sudoku
 cloner le répertoire
 
 ### Pré-requis
-avoir gcc d'installer
-#
+avoir gcc d'installer####
 Linux:
-sudo apt install gcc
-#
+sudo apt install gcc####
 Windows:
 regarder avec mingw (https://www.mingw-w64.org/)
 
