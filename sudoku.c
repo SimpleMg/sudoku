@@ -57,10 +57,10 @@ int main(int argc, char **argv)
         i++;
         j = 0;
     }
-
     // affiche de la grille
+    resolve_sudoku(board, 0);
     afficher_grille(board);
-
+    
     return 1;
 }
 
