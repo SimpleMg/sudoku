@@ -103,30 +103,5 @@ BOOL valide(int **board,int ligne, int colonne, int valeur)
     return TRUE;
 }
 
-BOOL resoudre_sudoku(int **board, int position)
-{
-    if (position == NBRE_COLONNE * NBRE_LIGNE)
-    {
-        return TRUE;
-    }
-    int ligne = position / NBRE_LIGNE;
-    int colonne = position % NBRE_COLONNE;
-    if (board[ligne][colonne] != 0)
-    {
-        return resoudre_sudoku(board, position + 1);
-    }
-    for (int i = 1; i <= 9; i++)
-    {
-        if (valide(board, ligne, colonne, i))
-        {
-            board[ligne][colonne] = i;
-            if (resoudre_sudoku(board, position + 1))
-            {
-                return TRUE;
-            }
-        }
-    }
-    board[ligne][colonne] = 0;
-    return FALSE;
-}
+
 
