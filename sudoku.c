@@ -59,7 +59,6 @@ int main(int argc, char **argv)
     }
 
     // affiche de la grille
-    resoudre_sudoku(board,0);
     afficher_grille(board);
 
     return 1;
