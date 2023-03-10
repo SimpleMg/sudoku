@@ -67,9 +67,11 @@ BOOL verif_colonne(int **board, int colonne, int valeur)
 
 BOOL verif_3x3(int **board, int ligne, int colonne, int valeur)
 {
-    int i = 0, j = 0;
+    int i,j;
     int k = ligne - (ligne % 3);
     int l = colonne - (colonne % 3);
+    i = k;
+    j = l;
     while(i < k + 3)
     {
         while(j < l + 3)
@@ -84,6 +86,7 @@ BOOL verif_3x3(int **board, int ligne, int colonne, int valeur)
     }
     return TRUE;
 }
+
 
 
 BOOL valide(int **board,int ligne, int colonne, int valeur)
