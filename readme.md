@@ -11,7 +11,7 @@ avoir gcc d'installer
 Linux:
 sudo apt install gcc
 Windows:
-regarder avce mingw
+regarder avec mingw (https://www.mingw-w64.org/)
 
 ### Installation
 
