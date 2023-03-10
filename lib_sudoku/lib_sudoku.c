@@ -106,6 +106,7 @@ BOOL valide(int **board,int ligne, int colonne, int valeur)
     return TRUE;
 }
 
+
 BOOL resolve_sudoku(int **board, int position)
 {
     if (position == NBRE_COLONNE * NBRE_LIGNE)
@@ -116,8 +117,8 @@ BOOL resolve_sudoku(int **board, int position)
     if (board[i][j] != 0)
         return resolve_sudoku(board, position+1);
 
-
-    for (int k=1; k <= 9; k++)
+    int k = 1;
+    while(k <= NBRE_COLONNE)
     {
 
         if (valide(board, i,j,k))
@@ -128,10 +129,10 @@ BOOL resolve_sudoku(int **board, int position)
             if ( resolve_sudoku (board, position+1) )
                 return TRUE;  
         }
+        k++;
     }
 
     board[i][j] = 0;
 
     return FALSE;
 }
-
