@@ -24,7 +24,6 @@ gcc -Wall -Werror -Wextra main.c lib_sudoku/lib_sudoku.c Biblio_C/biblio.c
 ./a.out <votre fichier>.txt
 
 ## Auteurs
-Listez le(s) auteur(s) du projet ici !
 * **SimpleMG** _alias_ [@SimpleMg](https://github.com/SimpleMg)
 
 
