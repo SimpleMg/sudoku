@@ -1,7 +1,6 @@
 # Titre du projet
 Resolveur de Sudoku
 
-
 ## Pour commencer
 
 cloner le répertoire
@@ -10,6 +9,7 @@ cloner le répertoire
 avoir gcc d'installer
 Linux:
 sudo apt install gcc
+#
 Windows:
 regarder avec mingw (https://www.mingw-w64.org/)
 
