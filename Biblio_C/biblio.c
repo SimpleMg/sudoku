@@ -100,7 +100,7 @@ int mg_len_nombre(int nbr)
 
 
 
-int puissance_10(int nbr)
+int mg_puissance_10(int nbr)
 {
     int i = 1;
     int res = 1;
@@ -112,7 +112,7 @@ int puissance_10(int nbr)
     return res;
 }
 
-int puissance(int nbr, int puissance)
+int mg_puissance(int nbr, int puissance)
 {
     int i = 0;
     int nbr_puissance = 1;
