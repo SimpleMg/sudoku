@@ -12,7 +12,7 @@ BOOL verif_ligne(int **board, int ligne, int valeur);
 BOOL verif_colonne(int **board, int colonne, int valeur);
 BOOL verif_3x3(int **board, int ligne, int colonne, int valeur);
 BOOL valide(int **board, int i,int j,int valeur);
-BOOL resoudre_sudoku(int **board, int position);
+
 
 
 #endif
