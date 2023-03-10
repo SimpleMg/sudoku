@@ -35,5 +35,6 @@ void mg_reverse_alphabet(void);
 void mg_affiche_chiffre(void);
 int mg_isneg(int nbr);
 int mg_ispalindrome(char *str);
+void mg_fibonnacci(int n);
 
 #endif
