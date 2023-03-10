@@ -11,7 +11,7 @@ int main(int argc, char **argv)
     /*VERIFIE SI L'UTILISATEUR PASSE BIEN LE FICHIER TEXT EN ARGUMENT*/
     if (argc < 2)
     {
-        mg_putstr("Merci de renseigner le fichier txt exemple: ./a.out 3 exemple.txt\n");
+        mg_putstr("Merci de renseigner le fichier txt exemple: ./a.out exemple.txt\n");
         return 0;
     }
     /*RECUPERATION DES DONNEES DU FICHIER TXT*/
